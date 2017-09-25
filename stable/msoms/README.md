@@ -1,4 +1,4 @@
-# Azure Log Analytics Container Monitoring Solution
+ # Azure Log Analytics Container Monitoring Solution
 
 Azure Log Analytics is a software-as-a-service offering from Microsoft that allows Enterprise IT to manage any hybrid cloud. It offers log analytics, automation, backup and recovery, and security and compliance.  Sign up for a free subscription on [Azure](https://azure.microsoft.com/en-us/free/) or read more about [Azure Log Analytics ](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-overview)
 
@@ -49,7 +49,7 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 
 ```bash
 $ helm install --name omsagent \
-  --set omsagent.secret.wsid=<your_workspace_id>,omsagent.secret.key=<your_workspace_key>
+  --set omsagent.secret.wsid=<your_workspace_id>,omsagent.secret.key=<your_workspace_key> stable/msoms
 
 ```
 
